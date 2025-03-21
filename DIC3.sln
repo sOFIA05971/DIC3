@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIC3", "DIC3.csproj", "{77959E47-927D-449C-A631-309791C176DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77959E47-927D-449C-A631-309791C176DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77959E47-927D-449C-A631-309791C176DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77959E47-927D-449C-A631-309791C176DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77959E47-927D-449C-A631-309791C176DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0AE51B6-84FB-47D7-98AF-62697A4D4F50}
+	EndGlobalSection
+EndGlobal
