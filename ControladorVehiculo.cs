@@ -85,5 +85,41 @@ namespace DIC3
             diccionariocamion.Add(id, new VehiculoCamion(vca.ID, vca.Marca, vca.Modelo, vca.Anio, vca.CapacidadCarga));
 
         }
+        public void MostrarCamion()
+        {
+            foreach (var cam in diccionariocamion)
+            {
+                Console.WriteLine($"ID:{cam.Value.ID}");
+                Console.WriteLine($"Marca:{cam.Value.Marca}");
+                Console.WriteLine($"Modelo:{cam.Value.Modelo}");
+                Console.WriteLine($"Anio:{cam.Value.Anio}");
+                Console.WriteLine($"capacidad de carga:{cam.Value.CapacidadCarga}");
+            }
+        }
+        public void ElimnarCM()
+        {
+            Console.WriteLine("Dame ID a eliminar:");
+            int iD = Convert.ToInt32(Console.ReadLine());
+
+            diccionariocamion.Remove(iD);
+
+        }
+        public void ActualizarCamion() 
+        {
+            Console.WriteLine("Dame ID a actualizar:");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            var camion = diccionariocoche.FirstOrDefault(x => x.Value.ID == id);
+
+            Console.WriteLine("Dame nuevo ID:");
+            camion.Value.ID = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame nueva marca:");
+            camion.Value.Marca = Console.ReadLine();
+            Console.WriteLine("Dame nuevo modelo:");
+            camion.Value.Modelo = Console.ReadLine();
+            Console.WriteLine("Dame nuevo anio");
+            camion.Value.Anio = Convert.ToInt32(Console.ReadLine());
+        }
     }
+    
 }
